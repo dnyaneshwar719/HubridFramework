@@ -11,6 +11,7 @@ public String readDatafromExcel(String sheetname,int rowNum,int cellNum) throws 
 	FileInputStream fise=new FileInputStream(IconstantUtil.propth);
 	 Workbook wb = WorkbookFactory.create(fise);
 	return wb.getSheet(sheetname).getRow(rowNum).getCell(cellNum).getStringCellValue();
+	System.out.println("it is change made by me from Github")
 }
 
 }
